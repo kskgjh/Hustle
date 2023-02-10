@@ -1,0 +1,64 @@
+.input{
+    margin-top: 3%;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 15% auto 10%;
+    place-items: center;
+    border-radius: 16px;
+    background-color: whitesmoke;
+    padding:3%;
+    margin-inline: auto;
+    
+}
+.input img{
+    width: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.input textarea {
+    width: 90%;
+    height: 80%;
+    border: none;
+    overflow-y: auto;
+    background-color: lightgray;
+    resize: none;
+    font-size: 1.3rem;
+}
+.input textarea:focus{
+    outline:none;
+}
+.input i {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: -40%
+}
+
+.comentario{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 15% auto;
+    margin-inline:auto;
+    border-radius: 16px;
+    padding: 3%;
+    background-color: whitesmoke;
+    margin-top: 3%;
+}
+.comentario h1{ 
+    font-size: 1.3rem;
+    margin-left: 2%;
+    margin-top: 0;
+}
+.comentario h2{
+    margin-top: 0;
+}
+.comentario img {
+    width: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.comentario div {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}

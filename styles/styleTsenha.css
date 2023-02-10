@@ -1,0 +1,101 @@
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    color: purple;
+    
+}
+
+main{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    height: 100vh;
+
+
+}
+.container{
+    display: grid;
+    grid-template-rows: 10% 10% 60% 20%;
+    width: 40vw;
+    padding: 5%;
+    place-items: center;
+    border-radius: 24px;
+    text-align: center;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, 
+                rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.container h1 {
+    margin: 0;
+}
+.confirm{
+    gap: 10px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding-bottom: 3%;
+    border-width: 0.5px;
+    border-style: solid;
+    border-top:none;
+    border-left: none;
+    border-right: none; 
+    
+}
+.confirm :first-child{
+    margin-top: -10%;
+}
+.new{
+    padding-top: 3%;
+    padding-bottom: 5%;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-rows: 33% 33% 33%;
+    place-items: center;
+    gap: 10px
+
+}
+.span {
+    display: hidden;
+    height: 90%;
+    margin:0;
+    font-size: 150%;
+
+}
+.new a {
+    margin-left: -16% ;
+    padding: 0px;
+}
+
+
+.msg{
+	color: green;
+	font-size: large;
+}
+.msgr{
+	color: red;
+	font-size: large;
+}
+.container Input {
+    height: 4vw;
+    text-align: center;
+    width:  50%;
+    border-radius: 16px;
+    font-size: large;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    margin: 0;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition: all, ease-in-out;
+    
+  }
+  .container Input:hover{
+    background-color: rgb(228, 228, 228);
+    
+  }
+  .container Input:focus{
+    background-color: lightgray;
+  }

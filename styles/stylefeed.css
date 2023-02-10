@@ -1,0 +1,381 @@
+
+.body {
+    background-color: whitesmoke;
+    display: grid;
+    place-items: center;
+}
+
+.main {
+    gap: 2%;
+    width: 60%;
+    
+    height:auto;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+
+@media screen and (max-width: 820px){
+    .main{
+        width: 100%;
+  
+    }
+
+}   
+@media screen and (max-width: 600px){
+    .main {
+        margin: none;
+    }
+    .btn {
+        scale: 0.8;
+        padding: 20%;
+    }
+    .spanfoto i {
+        font-size: 0.8rem;
+    }
+} 
+.cardform{
+    width: 100%;
+    border: 1px solid rgb(167, 31, 167);
+    border-top: none;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height: auto;
+    padding-bottom: 3%;
+}
+
+.cardpubli{
+    margin-top: 5%;
+    padding-bottom: 5%;
+    display: grid;
+    
+    width: 100%;
+    border: 4px solid purple;
+    border-bottom: none;
+    border-right:none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height: auto;
+    background-color: white;
+
+}
+
+.publi1{
+    width: 100%;
+    margin-top: 2%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    cursor:pointer;
+}
+.publi1:hover{
+    text-decoration: underline;
+
+}
+.publinome{
+    margin-left: 2%;
+    margin-top: -2%;
+    display: block;
+    width: 100%;
+}
+.publidata{
+    color: gray;
+    margin-top: -2%;
+    font-size: medium;
+}
+
+.imgPerfil {
+    width: 12%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-left: 2%;
+
+}
+.publitxt{
+    text-align: justify;
+    margin-left: 5%;
+    width: 85%;
+    font-size: 20px;
+}
+.containertxt div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.fotoPerfil {
+    
+    margin-left: 30%;
+    align-self: flex-start;
+    width: 80%;
+    border: 0.5px solid purple;
+    margin-top: 15%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+}
+.txtpubli{
+    width: 80%;
+    margin-top: 8%;
+    height: 50%;
+    cursor: pointer;
+    outline:none;
+    border: none;
+    resize: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 20px;
+    align-self: flex-end;
+    transition: background-color 600ms ease-in-out,
+                border 1500ms ease-in-out;
+
+    -webkit-transition: border 1000ms step-start ;
+}.txtpubli:hover {
+    background-color: lightgray;
+    
+}
+.txtpubli:focus{
+    border-width: 2px;
+    outline:none;
+    border-style: solid;
+    border-color: purple;
+}
+.inputxtarea{
+    display: none;
+    position: absolute;
+}
+.containertxt{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+    height: 20%;
+}
+.containerpubli{
+    display: grid;
+    grid-template-columns: 70% auto;
+    place-items: center;
+    height: auto;
+    width: 100%;
+
+}
+.divbtn{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    height: auto;
+
+}
+ .btn{
+    max-width: 145px;
+ }
+.btnpubli:hover{
+    background-color:rgb(152, 77, 221) ;
+}
+.btnpubli:active{
+    border-color: rgb(76, 12, 160);
+    background-color:rgb(171, 114, 224) ;
+}
+.hidden{
+    display: none;
+}
+.fotopubli{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 70%;
+    height: auto;
+    padding-left: 4%;
+    gap:5%;
+
+}
+.cabeçalho{
+    width: 10%;
+}
+.labelfoto{
+    display: grid;
+    flex-flow: column nowrap;
+    margin-top: 3%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 3%;
+    width: 15%;
+    max-width: 100px;
+    aspect-ratio: 1/1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 3px;
+    border-color:purple ;
+    transition: background-color 500ms ease-in-out
+}.labelFoto:hover{
+    background-color: gray;
+}
+
+.fotoLabel{
+    scale: 1.2;
+    max-width: 100%;
+    aspect-ratio:1/1;
+    margin-top: -2%;
+    padding: 0px;
+    border-radius: 5px;
+
+}
+.fotoLabel:hover{
+    scale: 1.5;
+}
+
+.spanfoto{
+    display: grid;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin: 0px;
+
+    padding-bottom: -5px;    
+}
+.spanfoto i {
+    color: black;
+    font-size: 3rem;
+}
+.labelTxt{
+    width: 100%;
+    height: 100%;
+    padding: none;
+    
+}
+.imagens{    
+    place-self: center;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: auto;
+    margin-top:3%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    padding: 3%;
+    background-color: whitesmoke;
+    border-radius: 16px;
+    gap: 10px;
+   
+}
+.foto{
+    flex-grow: 1;
+    flex-basis: 49%;
+    max-width: 90%;
+    min-width: 49%;
+    aspect-ratio: 1/1;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, 
+    rgba(0, 0, 0, 0.07) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, 
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, 
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, 
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 16px;
+    
+}
+
+
+
+.midia{
+    display: grid;
+    grid-template-columns: 33% 33% 33%; 
+    place-items: center;
+    width: 60%;
+    height: 100%;
+    margin-inline: auto;
+    text-align: center;
+}
+.midia div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.midia a{
+    padding: 2%;
+    border-radius: 16px;
+    cursor: pointer;
+    
+}
+.midia label {
+    text-align: center;
+    padding:5%;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.midia label i {
+    padding:5%;
+}
+.midia i {
+    margin-top: 2%;
+    cursor:pointer;
+    padding-right: 3%;
+    font-size: 2rem;
+    padding:5%;
+
+}
+@media screen and (max-width: 1550px){
+    .midia i {
+        font-size: 1.5rem;
+    }
+    .spanfoto i {
+        font-size: 1.5rem;
+    }
+}
+.curtido {
+    color: purple;
+}
+
+.Ncurtidas{
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    margin-right: -3%;
+    position:relative;
+}
+
+.search{
+    display: block;
+    margin-top: 5%;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    border-radius: 16px;
+    font-size:  1.3rem;
+    border: 1px solid purple;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: 0 0 10 black;
+    transition: background-color 400ms ease-in-out;
+}
+.search:hover{
+    background-color: lightgray;
+    box-shadow: none;
+}
+.search:focus {
+    outline:none;
+    box-shadow: inset -5px -5px 10px hsl(0 0% 0% / 0.5),
+                inset 5px 5px 10px hsl(0 0% 50%);
+    background-color: white;
+    color: black;
+}
+
+.edit{
+    font-size: 1.5rem;
+    position: relative;
+    width: auto;
+    margin-bottom: -3%;    
+    margin-left: auto;
+    margin-right: 3%;
+}

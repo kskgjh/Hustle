@@ -1,0 +1,44 @@
+*{
+    overflow: hidden;
+}
+
+body{
+    display: grid;
+    background-color: purple;
+    cursor: pointer;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+body:active{
+    background-color: rgb(182, 12, 182);
+}
+h1{
+    font-size: 500%;
+    color: whitesmoke;
+    margin-top: -10%;
+    text-align: center;
+    border-bottom: 2px double gray
+
+}
+h2 {
+    font-size: 200%;
+    color: whitesmoke;
+    text-align: center;
+}
+H3 {
+ 
+        font-size: 200%;
+        color: whitesmoke;
+        margin-top: 20%;
+        margin-bottom: 30%;
+        text-align: center;
+}
+h4 {
+    font-size: 150%;
+    color: gray;    
+    margin-top: 23%;
+    text-align: center;
+}

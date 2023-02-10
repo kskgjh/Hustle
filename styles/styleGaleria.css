@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria{
+    display: grid;
+    width: 80%;
+    height: auto;
+    padding-bottom: 5%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5%;
+    border: 10px solid black;
+    grid-template-columns: 32% 32% 32%;
+}
+.galeria img {
+    width: 100%;
+    opacity: .8;
+    aspect-ratio: 1/1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    object-fit: cover;
+    
+    transition: 300ms ease-in;
+}
+.galeria img:hover{
+    scale: 1.15;
+    opacity: 1;
+}
+img:hover :not(img:hover){
+    scale: .8;
+}
